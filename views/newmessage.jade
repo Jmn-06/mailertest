@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddUser(name="sendmessage",method="post",action="/sendmessage")
+        input#inputUserEmail(type="text", placeholder="useremail", name="useremail")
+        input#inputMessage(type="text", placeholder="message", name="message")
+        button#btnSubmit(type="submit") submit
